@@ -1,0 +1,40 @@
+.customer-search-box {
+    width: auto;
+    height: fit-content;
+    position: relative;
+}
+
+.customer-input-search {
+    width: 30px;
+    border-style: dotted;
+    padding: 5px;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 20px;
+    color: #000;
+    width: 230px;
+    border-radius: 73px;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+.map-container {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #f6f6f6 10%, #9c94b5a3 40%, rgba(240, 248, 255, 1) 70%, rgba(255, 250, 250, 1) 90%);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
