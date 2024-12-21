@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="name">res.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="gps_coordinates" readonly="1" force_save="1"/>
+                    <field name="latitude" readonly="1" force_save="1" invisible="1"/>
+                    <field name="longitude" readonly="1" force_save="1" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_sales_maps_view" model="ir.actions.client">
+            <field name="name">Sales Map View</field>
+            <field name="tag">sales_map.sales_maps_view</field>
+        </record>
+
+        <menuitem id="menu_sales_map"
+                  name="Sale Map"
+                  parent="sale.sale_menu_root"
+                  action="action_sales_maps_view"
+                  sequence="100" />
+    </data>
+</odoo>
